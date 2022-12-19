@@ -17,6 +17,7 @@
 
     </VideoView>
     <ProgressBar
+        android:id="@+id/videoProgressBar"
         android:layout_width="30dp"
         android:layout_height="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -26,12 +27,10 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginBottom="5dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent">
     <TextView
+        android:id="@+id/textVideoTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingBottom="5dp"
@@ -41,9 +40,55 @@
         android:shadowDx="0"
         android:shadowDy="0"
         android:shadowRadius="15"
-        android:textColor="25sp"
-        android:textColorHint="@android:color/white"
+        android:shadowColor="@android:color/black"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:text="Hello"
+        android:textStyle="bold"
         />
+
+        <TextView
+            android:id="@+id/textVideoDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="5dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="5dp"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:text="Hello 1 "
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:paddingBottom="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_baseline_favorite_24"/>
+
+       <ImageView
+           android:layout_width="35dp"
+           android:layout_height="35dp"
+           android:layout_margin="10dp"
+           android:src="@drawable/ic_baseline_download_24"/>
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_baseline_share_24"/>
+
     </LinearLayout>
 
 
